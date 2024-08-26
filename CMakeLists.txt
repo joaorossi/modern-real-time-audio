@@ -285,3 +285,20 @@ add_plugin(svf
     INCLUDE_DIRS
         ${dsp_source}
         ${svf_source})
+
+set(neural_networks_source ${CMAKE_CURRENT_SOURCE_DIR}/projects/NeuralNetworks)
+
+add_plugin(neural_networks
+    VERSION 0.1.0
+    PLUGIN_NAME "Neural Networks"
+    PROD_NAME NeuralNetworks
+    PROD_CODE NNet
+    SYNTH FALSE
+    SOURCES
+        ${neural_networks_source}/PluginEditor.cpp
+        ${neural_networks_source}/PluginProcessor.cpp
+        ${neural_networks_source}/TanhMlpParameters.cpp
+    INCLUDE_DIRS
+        ${gui_source}
+        ${dsp_source}
+        ${neural_networks_source})
