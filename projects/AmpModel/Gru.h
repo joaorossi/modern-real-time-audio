@@ -78,7 +78,7 @@ public:
             for (size_t i = 0; i < HIDDEN_SIZE; ++i)
             {
                 // TODO 3.1) Compute W_in * x + b_in and store result to n_gate
-                // TODO 3.2) Compute W_h * h + b_h and store result to n_hidden
+                // TODO 3.2) Compute W_hn * h + b_hn and store result to n_hidden
                 // TODO 3.3) Multiply n_hidden by the r gate
                 // TODO 3.4) Add n_hidden to n_gate
                 // TODO 3.5) Apply tanh activation function to n_gate
