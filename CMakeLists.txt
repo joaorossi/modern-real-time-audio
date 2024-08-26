@@ -304,3 +304,20 @@ add_plugin(neural_networks
         ${gui_source}
         ${dsp_source}
         ${neural_networks_source})
+
+set(amp_model_source ${CMAKE_CURRENT_SOURCE_DIR}/projects/AmpModel)
+
+add_plugin(amp_model
+    VERSION 0.1.0
+    PLUGIN_NAME "Amp Model"
+    PROD_NAME AmpModel
+    PROD_CODE AmpM
+    SYNTH FALSE
+    SOURCES
+        ${amp_model_source}/PluginEditor.cpp
+        ${amp_model_source}/PluginProcessor.cpp
+        ${amp_model_source}/AmpGruParameters.cpp
+    INCLUDE_DIRS
+        ${gui_source}
+        ${dsp_source}
+        ${amp_model_source})
