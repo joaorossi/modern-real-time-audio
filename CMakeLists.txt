@@ -282,6 +282,7 @@ add_plugin(svf
         ${svf_source}/PluginEditor.cpp
         ${svf_source}/PluginProcessor.cpp
         ${dsp_source}/StateVariableFilter.cpp
+        ${dsp_source}/Oscillator.cpp
     INCLUDE_DIRS
         ${dsp_source}
         ${svf_source})
