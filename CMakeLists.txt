@@ -298,6 +298,7 @@ add_plugin(neural_networks
         ${neural_networks_source}/PluginEditor.cpp
         ${neural_networks_source}/PluginProcessor.cpp
         ${neural_networks_source}/TanhMlpParameters.cpp
+        ${neural_networks_source}/TanhRnnParameters.cpp
     INCLUDE_DIRS
         ${gui_source}
         ${dsp_source}
