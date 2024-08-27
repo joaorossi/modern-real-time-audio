@@ -4,8 +4,8 @@
 
 static const std::vector<mrta::ParameterInfo> ParameterInfos
 {
-    { Param::ID::Volume,  Param::Name::Volume,  "", 0.0f, 0.0, 1.f, 0.1f, 1.0f },
-    { Param::ID::Tone,  Param::Name::Tone,  "", 0.0f, 0.0f, 1.f, 0.1f, 1.0f }
+    { Param::ID::Volume,  Param::Name::Volume,  "", 0.5f, 0.0f, 1.f, 0.1f, 1.0f },
+    { Param::ID::Tone,  Param::Name::Tone,  "", 0.5f, 0.0f, 1.f, 0.1f, 1.0f }
 };
 
 AmpModelProcessor::AmpModelProcessor() :
